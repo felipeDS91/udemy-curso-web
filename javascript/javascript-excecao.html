@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de exceção javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var fruta = 'pera';
+
+		switch(fruta){
+			case "laranja":
+				alert('laranja');
+				break;
+			case "maça":
+				alert('maça');
+				break;
+			case "banana":
+				alert('banana');
+				break;
+			case "careja":
+				alert('cereja');
+				break;
+			default:
+				throw {codigo: 5, descricao: 'Erro ao validar fruta'}	
+		}
+	</script>
+
+</body>
+</html>

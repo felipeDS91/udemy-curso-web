@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplos de laço em javascript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+
+		/* FOR */
+		var i = 0;
+		var j = 10;
+
+		for (i=0; i<j; i++){
+			console.log('O valor atual de i é:' + i);
+		}
+
+
+		/* DO WHILE */
+		var b = 10;
+		do {
+
+			console.log(b);
+			b--;
+		}while(b>0);
+
+
+		/* WHILE */
+		var c = 0;
+		while (c < 10){
+			console.log('valor de c:' + c);
+			c++;
+		}
+
+
+
+		/* FOR IN e FOR OF para percorrer listas */
+		var lista = ['João', 'Maria', 'Felipe'];
+
+		for (item in lista){
+			console.log(item);
+		}
+
+		for(item of lista){
+			console.log(item);
+		}
+
+
+		/* Trabalhando com objeto mais complexo */
+		var lista3 = [{nome: 'felipe', idade:27}, 
+					  {nome: 'mariane', idade:29}]
+
+		for (item of lista3){
+			console.log(item.nome);
+		}	
+
+	</script>
+		}
+
+</body>
+</html>

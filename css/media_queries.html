@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Queries</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		h1{
+			text-align: center;
+			color: red;
+		}
+
+		a{
+			color: green;
+			font-weight: bold;
+		}
+
+		@media only screen 
+			and (min-device-width: 500px) /* print; all; screen*/
+			/*and (orientation: landscape) só para quando estiver deitado*/{	
+			body{
+				background-color: blue;				
+			}
+			h1{
+				color: black;
+			}
+		}
+
+		@media all and (max-device-width: 800px){ /* print; all; screen*/
+			body{
+				background-color: red;				
+			}
+			h1{
+				color: black;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Exemplo de mudança de comportamento de acordo com o tamanho da tela por exemplo</h1>
+
+	<div>
+		<p>Esse site tem vários comportamentos pré cadastrados para diferentes dispositivos.
+		Ex.: iPad, iPad em landscape, portrait, etc...</p>
+		<a href="http://stephen.io/mediaqueries">Site</a>
+	</div>
+
+</body>
+</html>

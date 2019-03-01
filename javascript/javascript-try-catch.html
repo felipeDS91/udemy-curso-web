@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de captura de erro</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a =10;
+
+		try{
+			a = a +1;
+			//alert(b);
+		}catch(e){
+			alert('deu erro:' + e.message);
+		}finally{
+			console.log('acabou');
+		}
+
+	</script>
+
+</body>
+</html>

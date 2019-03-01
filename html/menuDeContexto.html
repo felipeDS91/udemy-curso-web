@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de menu de contexto</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	 <h1>Exemplo de menu de contexto com o botão direito na página (só funciona no firefox)</h1>
+	 <menu type="toolbar">
+	 	<li>
+	 		<button type="menu" menu="file-menu">File</button>
+	 		<menu type="context" id="file-menu">
+	 			<menuitem label="New..." onclick="newFile()">
+	 			<menuitem label="Save..." onclick="saveFile()">		
+	 		</menu>		
+	 	</li>
+	 	<li>
+	 		<button type="menu" menu="edit-menu">Edit</button>
+	 		<menu type="context" id="edit-menu">
+	 			<menuitem label="Cut..." onclick="cutEdit()">
+	 			<menuitem label="Copy..." onclick="copyEdit()">
+	 			<menuitem label="Paste..." onclick="pasteEdit()">
+	 		</menu>		
+	 	</li>	
+	 </menu>	
+
+	 <div contextmenu="popup-menu">
+	 	Clique com o botão direito para ver as opções
+	 </div>
+	 <menu type="context" id="popup-menu">
+	 	<menuitem type="checkbox" onclick="toggleOption()" checked="true">CheckBox</menuitem>
+	 	<menuitem type="command" label="Command" icon="icon.png" onclick="doSomething()">CheckBox</menuitem>
+	 	<menuitem type="radio" name="group1" onclick="option()">Radio button 1</menuitem>
+	 	<menuitem type="radio" name="group1" onclick="option()" checked="true">Radio button 2</menuitem>
+
+
+	 </menu>	
+</body>
+</html>

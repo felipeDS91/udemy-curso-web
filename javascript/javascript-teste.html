@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<input type='text' id='teste'> Elemento criado via JS");
+
+		function pegaInput(){
+			var a = document.getElementById("teste").value;
+			alert(a);
+		}
+	</script>
+
+
+	<button onclick="pegaInput()">Pega texto</button>
+</body>
+</html>

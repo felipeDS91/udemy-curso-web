@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+
+	<!-- Obs.: Sempre usar as medidas em "em" pois fica responsivo (1em = 16px) -->
+	<style type="text/css">
+		body{
+
+			/*font:20px "Comic Sans MS", cursive;*/
+			font-size: 100%;
+			text-align: justify;
+			letter-spacing: 3px;
+			line-height: 50px;
+			word-spacing: 10px;
+			color: #945959;
+			background-color: #ffff99;
+
+			text-decoration: none; /* Serve para tirar o underline de um link por exemplo */
+
+			background: url("logo.jpg") no-repeat; /* Colocar plano de fundo no body via css*/
+			
+		}
+
+		h1:before{
+			content: "Texto inserido via css ";
+		}
+
+		/* Inserindo um icone via css antes de cada link da classe "glossary" */
+		a.glossary:before{
+			content: " " url("icon.png");
+		}
+
+		h1{
+			font-style: italic;
+			font-size: 2.5em;
+			font-weight: normal;
+			text-decoration: underline;
+			text-align: center;
+			text-indent: 50px;
+			line-height: 50px;
+			word-spacing: 10px;
+
+			/* Diferença da função RGBA é que dá para definir a transparência no ultimo parametro */
+			color: rgba(0,0,255, 0.5); 
+
+		}
+
+	</style>
+
+	
+</head>
+<body>
+
+	<a class="glossary" href="http://www.uol.com.br">Link teste só para inserir o icone via css</a>
+
+
+
+	<article>
+		<h1>Titulo</h1>
+		<p>Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.<strong>Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.</strong>Meu texto aqui.Meu texto aqui.</p>
+	</article>
+
+	<article style="color:blue">
+		<h1>Titulo</h1>
+		<p>Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.<strong>Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.</strong>Meu texto aqui.Meu texto aqui.</p>
+	</article>
+
+	<article>
+		<h1>Titulo</h1>
+		<p>Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.<strong>Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.</strong>Meu texto aqui.Meu texto aqui.</p>
+	</article>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		function incrementa(){
+			document.getElementById('nota').value += 10;
+		}	
+
+		function decrementa(){
+			document.getElementById('nota').value -= 10;
+		}	
+
+	</script>
+</head>
+<body>
+	<form method="GET" action="#">
+		<br>
+		<fieldset>
+			<legend>Dados pessoais</legend>
+			<legend>Obs.: para dar o efeito do radiobutton, tem que deixar eles com o mesmo "name"</legend>
+			<input type="radio" id="radio" name="radio"> <label for="radio">Clique aqui</label>
+			<input type="radio" id="radio2" name="radio"> <label for="radio">Clique aqui 2</label>
+			<input type="text" name="nome" placeholder="Digite seu nome aqui">
+		</fieldset>
+
+		<p>
+		<legend>Campo para seleção livre</legend>	
+		<input list="browsers"/>
+		<datalist id="browsers">
+			<option value="Chrome"></option>
+			<option value="Firefox"></option>
+			<option value="IE"></option>
+			<option value="Opera"></option>
+			<option value="Safari"></option>
+		</datalist>
+
+		<p>		
+		<legend>Campo para seleção travado</legend>	
+		<select name="select">
+			<option value="valor1">Valor 1</option>
+			<option value="valor2">Valor 2</option>
+			<option value="valor3" selected>Valor 3</option>
+			<option value="valor4">Valor 4</option>
+		</select>
+
+		<p>
+		<textarea name="textarea" rows="10" cols="50">Digite aqui</textarea>
+
+		<p>
+		0<input type="range" name="b" value="50"/>100+<input type="number" name="a" value="10"/> = 
+		<output name="result">110</output>	
+
+		<p>
+		<progress value="70" max="100" id="nota">70%</progress>
+
+		<button onclick="incrementa()">Incrementa</button>
+		<button onclick="decrementa()">Decrementa</button>
+
+		<p>
+		<input type="checkbox" name="mycheck"> <label for="myscheck">Meu checkbox</label>
+
+
+		<br>
+		<!-- <h1 onmouseover="alert('Mouse Over')">Mouse Over</h1> Para não ficar enchendo -->
+
+		<p>
+		<input type="color" name="color"><br>
+		<input type="date" name="date"><br>
+		<input type="datetime" name="datetime"><br>
+
+		<p>
+		Selecione um arquivo: <input type="file" name="img">
+
+		<p>
+		Campo para senha: <input type="password" name="pwd">
+
+		<p>
+		Campo para email : <input type="email" name="email" required>
+
+		<p>
+		<button type="reset">Limpar dados</button>
+		<button type="submit"> Enviar</button>
+	</form>
+
+</body>
+</html>

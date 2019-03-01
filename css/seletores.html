@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seletores</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		/* Seletor universal */
+		*{
+			font-weight: bold;
+		}
+
+		/* Seletor do tipo atributo ou seletor de tipo */
+		h1 {
+			color: green;
+		}
+
+		/* Seletor do tipo classe */
+		.meuTituloClass{
+			color: blue;
+		}
+
+		/* Seletor do tipo ID */
+		#meuElementoComID{
+			color: yellow;
+		}
+
+		/* Seleciona os elementos desabilitados */
+		[disabled]{
+			color: grey;
+		}
+
+		/* Seleciona elementos setados para Espanhol */
+		[lang|=es]{
+			color: red;
+		}
+
+		/* Seleciona elementos do tipo button */
+		[type='button']{
+			background-color: green;
+		}
+
+		/* Seleciona elementos do tipo text */
+		[type='text']{
+			background-color: blue;
+		}
+
+		/* Seleciona elementos com a lasse key, é o mesmo que .key */
+		[class*=key]{
+			color: yellow;
+		}
+
+		/*
+
+			~ exato
+			* contem
+			$ termina com
+			^ começa com
+
+		*/
+
+		/* Seleciona elementos com titulo que contem a palavra exemple */
+		[title*="exemple" i]{
+			color: red;
+		}
+
+		/* Seleciona todos os links */
+		a {
+			color: green;
+		}
+
+		/* Seleciona todos os links do tipo HTTPS */
+		a[href^="https://"]{
+			color: blue;
+		}
+
+		/* Seleciona todas as imagens com extensão .png */
+		img[src$=".png"]:active{
+			background-color: pink;
+		}
+
+		/* Selecionando um texto setado via pseudo elemento */
+		[type="text"]:active{
+			background-color: pink;
+		}
+
+		/* */
+		img[src$=".png"]:hover{
+			transform: rotate(150deg);
+		}
+
+		li:first-child, li:last-child{
+			color: yellow;			
+		}
+
+		p:last-of-type{
+			font-size: 50px;
+		}
+
+		p.meuTituloComClass{
+			font-size: 14px;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<a href="http://www.w3schools.com/cssref/trysel.asp">Link para site que contem quase todos os modos de seletores</a>
+
+</body>
+</html>

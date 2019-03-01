@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+		function salvar() {
+			if (typeof(Storage)!=="undefined"){
+				// localStorage.setItem("nome", "Felipe");
+				var vNome = document.getElementById("nome").value;
+				localStorage.setItem("nome", vNome);
+
+				localStorage.setItem("sobrenome", "Douglas da Silva");
+				sessionStorage.setItem("endereco", "Rua Otavio conte");
+			} else {
+				alert("Seu navegador não suporta Web Storage");
+			}
+		}
+
+		function ler(){
+			if (typeof(Storage)!=="undefined"){
+				//document.getElementById("resultado").innerHTML = localStorage.getItem("nome");
+				document.getElementById("nome").value = localStorage.getItem("nome");
+			} else {
+				alert("Seu navegador não suporta Web Storage");
+			}			
+		}
+
+		function remover(){
+			if (typeof(Storage)!=="undefined"){
+				localStorage.removeItem("sobrenome");
+			} else {
+				alert("Seu navegador não suporta Web Storage");
+			}			
+		}
+
+	</script>
+</head>
+<body>
+	<legend>Esse exemplo mostra como usar o "LocalStorage/SessionStorage" para guardar os dados do usuário, isso é melhor que cookie.</legend>
+	<br>
+	<div id="resultado"></div>
+
+	Nome: <input type="text" name="nome" id="nome">
+	<button onclick="salvar()">Salvar</button>
+	<button onclick="ler()">Ler</button>
+	<button onclick="remover()">Remover</button>
+
+
+</body>
+</html>

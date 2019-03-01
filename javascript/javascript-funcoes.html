@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de função em JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var bola = 'quadrada';
+
+
+		/* Função sem retorno */
+		function SomaNum1(num1, num2){
+			console.log(num1 + num2);
+		}
+
+		/* Função com retorno */
+		function SomaNum2(num1, num2){		
+			return num1 + num2;
+		}
+
+
+		SomaNum1(9, 7);
+
+		var total = SomaNum2(4, 6);
+		console.log('retorno da função SomaNum2:' + total);
+
+
+		/* Atribuindo a uma variavel uma função anonima*/
+		var a = function(num){
+			return num/2;
+		}
+
+		document.write('<br>' + a(20));
+
+
+		/* Acessando uma variavel global (Sem a palavra "var") de fora de uma função */
+		function imprimeBola(){
+		   teste = 'teste';
+			document.write('<br>' + bola);
+		}
+
+		imprimeBola();
+
+		document.write('<br>' + teste);
+
+
+	</script>
+
+</body>
+</html>

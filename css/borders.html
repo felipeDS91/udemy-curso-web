@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de bordas</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.div1{
+			width:50%; 
+			height:100px;
+			border: ridge 10px;
+			border-color: blue;
+			padding: 10px 5px 5px 5px;
+			float: right;			
+		}	
+		.div2{
+			width:40%; 
+			height:100px;
+			border: ridge 10px;
+			border-color: green;
+			padding: 10px 5px 5px 5px;
+			margin: 1px;
+			float: left;
+		}
+		.div3{
+			clear: both; /* Define sem flutuamento */
+			/* Define que as propriedades "Top", "Bottom", "Left" e "Right" dos componentes dentro dessa div
+			serão relacionados a essa div e não ao documento html inteiro*/
+			position: relative; 
+			border: dotted;
+		}
+
+		img{
+			position: absolute;
+			bottom: -10px;
+			right: 0px;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		p{
+			text-indent: 50px;
+			border-top: 1px solid gray;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<h1>Aquario 1</h1>	
+	</div>
+
+	<div class="div2">
+		<h1>Aquario 2</h1>
+	</div>
+
+	<p>
+
+	<div class="div3">
+		<h1>Outra div</h1>
+				<p>Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.Meu texto aqui.<strong>Meu texto aqui.
+			Meu texto aqui.Meu texto aqui.Meu texto aqui.</strong>Meu texto aqui.Meu texto aqui.</p>
+
+		<img src="icon.png">	
+	</div>
+
+
+</body>
+</html>
