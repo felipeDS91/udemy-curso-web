@@ -1,0 +1,8 @@
+* Command to active virtual environment:
+D:\Projetos\curso-web\repo\django\workspace>meuAmbienteVirtual\Scripts\activate.bat
+
+* Command to create databases, etc..:
+Python manage.py migrate
+
+* Command to run server:
+Python manage.py runserver
