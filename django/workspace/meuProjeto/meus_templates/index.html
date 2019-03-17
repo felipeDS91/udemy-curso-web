@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+
+{% block title %} Seja bem vindo - Página principal {% endblock%}
+
+{% block main%}
+
+    <h1 class="programe_facil">ola mundooo</h1>
+
+
+    <!== jinja language (language used on django) ==>
+    <p>Condicionais </p>
+    {% if sexo == 'm' or sexo == 'M' %}
+        Ola senhor {{nome}}
+    {% elif sexo == 'f' %}
+        Ola senhora {{nome}}
+    {% else %}
+        Ola {{nome}}
+    {% endif %}
+    <br>
+    <br>
+
+    <p>Loops </p>
+    <ul>
+        {% for pessoa in lista %}
+
+            <li>    
+            {% if pessoa.sexo == 'm' or pessoa.sexo == 'M' %}
+                Ola senhor {{pessoa.nome}}
+            {% elif sexo == 'f' %}
+                Ola senhora {{pessoa.nome}}
+            {% else %}
+                Ola {{pessoa.nome}}
+            {% endif %}
+            </li>    
+
+        {% endfor%}
+    </ul>
+
+    <button class="btn btn-main" onclick="olaMundo()">clique aqui</button>
+
+    <!== injetando uma variavel ==>
+    
+{% endblock %}    
+
+{% block footer %}
+    {% include "footer.html" with pnome=nome%}
+{% endblock %}

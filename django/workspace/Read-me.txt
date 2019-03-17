@@ -1,8 +1,14 @@
 * Command to active virtual environment:
 D:\Projetos\curso-web\repo\django\workspace>meuAmbienteVirtual\Scripts\activate.bat
 
+* Command to create a new adm user:
+Python manage.py createsuperuser
+
 * Command to (run) create databases, etc..:
 Python manage.py migrate
+
+* Command to install Library of python's image manage 
+pip install Pillow
 
 * Command to run server:
 Python manage.py runserver
@@ -12,3 +18,9 @@ Python manage.py makemigrations
 
 * Command to run Django on command line:
 Python manage.py shell 
+
+* Template : Calculos simples no máximo, mas são só para exibir informação.
+* Models : Regra de negocio.
+* View : Como a aplicação se comporta (Ela distribui as chamadas(requestes)).
+
+

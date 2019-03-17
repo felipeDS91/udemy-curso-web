@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, re_path
 from .views import home
 from clientes.views import clientes, cliente_detalhe, cliente_por_nome
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path(r'', home), 
@@ -24,4 +26,5 @@ urlpatterns = [
     re_path(r'^cliente/(?P<id>\d+)$', cliente_detalhe),
     re_path(r'^cliente/(?P<nome>\w+)$', cliente_por_nome),
     path('admin/', admin.site.urls),
-]
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # Just remember that Django isn't a media provider, this is just to see in development
