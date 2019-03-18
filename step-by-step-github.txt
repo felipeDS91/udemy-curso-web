@@ -1,0 +1,8 @@
+*** STARTING A REPOSITORY WITH FILES THAT ALERADY EXISTS IN YOUR COMPUTER ***
+
+* Create a new repository in your github (without a option "Initialize this repository with a README", because this
+option creates a new file named "readme" and it will cause trouble if you will start your repository with local files)
+* Enter in folder using bash and put this command "git init" to inicialize a repository
+* Now we will add a remote repository to commit ours modifications with a command "git remote add github https://github.com/felipeDS91/tcc-univesp.git"
+* Now we will add ours files to this EMPTY repository, with command "git push -u gihub master"
+* Note : The parameter "-u" is just used on first push, to login on github.

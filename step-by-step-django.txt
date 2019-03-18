@@ -1,0 +1,17 @@
+* Create a folder
+* Inside this folder, with cmd press "python -m venv venv" to create a environment
+* Activate a virtual env with command "venv\Scripts\active.bat"
+* Create a file ".gitignore" and add a line with "venv" (To ignore venv folder)
+* Install django with command "pip install django"
+* Create a new project with command "django-admin startproject project_name ."
+* In file settings.py change language = 'pt-br', time_zone = 'America/Sao_Paulo', add 'localhost' in ALLOWED_HOSTS
+* Run command "python manage.py migrate" to create database
+* Run command "python manage.py createsuperuser" to create a new administrator user
+* Run server with commnand "python manage.py runserver"
+* Create a app with command "python manage.py startapp core" where "core" is a name of app
+* And register this app in file "settings.py", inserting 'core,' on last line of "INSTALLED_APPS"
+* Create our classes in models.py and run two commands: "python manage.py makemigrations" and "python manage.py migrate"
+* In file we will add ours created classes "admin.py", add a line "from .models import Class1, Class2, etc..."
+* And register this classes with "admin.site.register(Class1)
+				  admin.site.register(Class2)
+				  admin.site.register(Class3)"
